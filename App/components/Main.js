@@ -1,26 +1,9 @@
 import React, { Component } from 'react'
 import {
-  AppRegistry,
   StyleSheet,
-  // Text,
-  // View
-  NavigatorIOS
+  Text,
+  View
 } from 'react-native'
-import Main from './App/components/Main'
-
-class PortfolioIOS extends Component {
-  render () {
-    return (
-      <NavigatorIOS
-        initialRoute={{
-          component: Main,
-          title: 'TJ ALSTON'
-        }}
-        style={{flex: 1}}
-      />
-    )
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -41,4 +24,15 @@ const styles = StyleSheet.create({
   }
 })
 
-AppRegistry.registerComponent('PortfolioIOS', () => PortfolioIOS)
+class Main extends Component {
+
+  render () {
+    return (
+      <View style= {styles.instructions}>
+        <Text> Testing the Router</Text>
+      </View>
+    )
+  }
+}
+
+export default Main
