@@ -1,44 +1,33 @@
 import React, { Component } from 'react'
 import {
-  AppRegistry,
   StyleSheet,
+  AppRegistry,
   // Text,
   // View
   NavigatorIOS
 } from 'react-native'
 import Main from './App/components/Main'
 
+const styles = StyleSheet.create({
+  home: {
+    flex: 1,
+    backgroundColor: '#285775'
+  }
+})
+
 class PortfolioIOS extends Component {
+
   render () {
     return (
       <NavigatorIOS
+      style = {styles.home}
         initialRoute={{
-          component: Main,
-          title: 'TJ ALSTON'
+          title: 'TJ ALSTON',
+          component: Main
         }}
-        style={{flex: 1}}
       />
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
-})
 
 AppRegistry.registerComponent('PortfolioIOS', () => PortfolioIOS)

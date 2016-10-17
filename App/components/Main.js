@@ -6,30 +6,22 @@ import {
 } from 'react-native'
 
 const styles = StyleSheet.create({
-  container: {
+  instructions: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: 'rgb(201, 237, 240)'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
+  word: {
+    color: '#1a7fc8',
+    fontSize: 20
   }
 })
 
 class Main extends Component {
-
   render () {
     return (
       <View style= {styles.instructions}>
-        <Text> Testing the Router</Text>
+        <Text style ={styles.word}> Testing the Router</Text>
       </View>
     )
   }
