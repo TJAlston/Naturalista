@@ -11,7 +11,8 @@ import Main from './App/components/Main'
 const styles = StyleSheet.create({
   home: {
     flex: 1,
-    backgroundColor: '#285775'
+    justifyContent: 'center',
+    flexDirection: 'column'
   }
 })
 
