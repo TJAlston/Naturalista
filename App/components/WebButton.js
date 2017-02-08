@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   instructions: {
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: '#2d79dd',
+    backgroundColor: '#994F7B',
     padding: 15,
     margin: 5,
     borderRadius: 5

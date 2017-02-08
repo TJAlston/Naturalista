@@ -9,20 +9,23 @@ import {
 const styles = StyleSheet.create({
   second: {
     flex: 1,
-    backgroundColor: '#1a7fc8'
+    backgroundColor: '#5E284E'
+  },
+  paragraph: {
+    color: '#5C3F2D',
+    fontSize: 12,
+    fontFamily: 'Helvetica',
+    textAlign: 'center',
+    marginTop: 5
   }
 })
 
 class PortfolioIOS extends Component {
   render () {
     return (
-      <View className= 'TJ ALSTON'>
+      <View className= 'Naturalista'>
       style = {styles.second}
-      <Text>
-          Welcome to React Native!
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+      <Text style={styles.paragraph}>Welcome to Naturalista Hair Care. {'/n'} Where you can learn how to manage your own natural hair to become healthy and long.</Text>
       </View>
     )
   }

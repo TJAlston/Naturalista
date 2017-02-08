@@ -15,29 +15,30 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 20
+    marginHorizontal: 20,
+    backgroundColor: '#F1E5CE'
   },
   title: {
-    color: '#0a5993',
+    color: '#5E284E',
     fontSize: 20
   },
   name: {
     fontSize: 25,
-    color: '#0a5993',
+    color: '#5E284E',
     fontWeight: 'bold'
   },
   paragraph: {
-    color: '#1a1f22',
+    color: '#5C3F2D',
     fontSize: 12,
+    fontFamily: 'Helvetica',
     textAlign: 'center',
     marginTop: 5
   },
   headshot: {
-    height: 300,
-    width: 200,
-    marginVertical: 10,
-    borderWidth: 2,
-    borderColor: 'rgb(195, 202, 204)'
+    height: 275,
+    width: 250,
+    marginTop: 15,
+    paddingTop: 15
   },
   buttons: {
     flexDirection: 'row',
@@ -51,8 +52,7 @@ class Main extends Component {
       <View style= {styles.instructions}>
       <Text style ={styles.name}> Naturalista </Text>
       <Image style={styles.headshot} source={require('../images/NaturalistaLogo.png')} />
-        <Text style ={styles.title}> Hair Care App</Text>
-        <Text style={styles.paragraph}>Welcome to Naturalista Hair Care.  Where you can learn how to manage your own natural hair to become healthy and long.</Text>
+        <Text style={styles.paragraph}>Welcome to Naturalista Hair Care. {'\n'} Where you can learn how to manage your own natural hair to become healthy and long.</Text>
         <View style={styles.buttons}>
         <WebButton /><GraphicButton />
         </View>

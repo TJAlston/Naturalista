@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
   home: {
     flex: 1,
     justifyContent: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    backgroundColor: '#F1E5CE'
   }
 })
 
@@ -23,7 +24,7 @@ class PortfolioIOS extends Component {
       <NavigatorIOS
       style = {styles.home}
         initialRoute={{
-          title: 'TJ ALSTON',
+          title: 'Naturalista',
           component: Main
         }}
       />
