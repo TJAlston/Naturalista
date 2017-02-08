@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 class WebButton extends Component {
   render () {
     return (
-      <TouchableHighlight style={styles.instructions} onKeyPress={() => {}}>
+      <TouchableHighlight style={styles.instructions} onPress={() => {}}>
       <Text style={styles.text}>Web Design</Text>
       </TouchableHighlight>
     )

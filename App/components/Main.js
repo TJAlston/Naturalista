@@ -15,12 +15,16 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 5,
-    marginTop: 100
+    marginHorizontal: 20
   },
   title: {
     color: '#0a5993',
     fontSize: 20
+  },
+  name: {
+    fontSize: 25,
+    color: '#0a5993',
+    fontWeight: 'bold'
   },
   paragraph: {
     color: '#1a1f22',
@@ -31,10 +35,13 @@ const styles = StyleSheet.create({
   headshot: {
     height: 300,
     width: 200,
-    marginBottom: 5
+    marginVertical: 10,
+    borderWidth: 2,
+    borderColor: 'rgb(195, 202, 204)'
   },
   buttons: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    marginTop: 10
   }
 })
 
@@ -42,9 +49,10 @@ class Main extends Component {
   render () {
     return (
       <View style= {styles.instructions}>
-      <Image style={styles.headshot} source={require('../images/Headshot2.jpg')} />
-        <Text style ={styles.title}> Web Designer</Text>
-        <Text style={styles.paragraph}>Thank you for taking the time to view my page. I am a Web Designer and Developer based in Tampa Florida, that has experience working with HTML, CSS and Javascript. I am also a recent graduate of The Iron Yard with a certification in Front-End Engineering.</Text>
+      <Text style ={styles.name}> Naturalista </Text>
+      <Image style={styles.headshot} source={require('../images/NaturalistaLogo.png')} />
+        <Text style ={styles.title}> Hair Care App</Text>
+        <Text style={styles.paragraph}>Welcome to Naturalista Hair Care.  Where you can learn how to manage your own natural hair to become healthy and long.</Text>
         <View style={styles.buttons}>
         <WebButton /><GraphicButton />
         </View>
